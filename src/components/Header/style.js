@@ -9,7 +9,7 @@ export const HeaderWrapper = styled.header`
 
 export const StyledBurger = styled.button`
   position: absolute;
-  top: 3%;
+  top: 4%;
   right: 104px;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ export const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     right: 20px;
   }
 

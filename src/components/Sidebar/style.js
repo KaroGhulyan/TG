@@ -17,7 +17,7 @@ export const SidebarWrapper = styled.aside`
   right: 0;
   transition: transform 0.3s ease-in-out;
   z-index: 2;
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
   transform: ${({ open }) => (open ? 'translateX(50%)' : 'translateX(100%)')};
   }
 `;

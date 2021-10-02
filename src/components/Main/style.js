@@ -29,12 +29,12 @@ export const HeroSection = styled.div`
 
 export const NewsWrapper = styled.div`
   padding: 96px 0;
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }  
 `;
 export const NewsSection = styled.div`
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
   }
@@ -43,7 +43,7 @@ export const News = styled.div`
   display: flex;
   margin-bottom: 40px;
   flex-direction: row;
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
@@ -52,6 +52,9 @@ export const GeneralNews = styled.div`
   h4 {
     font-weight: 500;
     font-size: 18px;
+    margin: 16px 0;
+    font-size: 24px;
+    font-weight: bold;
   }
   img {
     width: 100%;
@@ -65,8 +68,9 @@ export const GeneralNews = styled.div`
 `;
 export const SecondNews = styled.div`
   h4 {
-    font-weight: 500;
     font-size: 16px;
+    margin: 16px 0;
+    font-weight: bold;
   }
   img {
     width: 100%;
@@ -83,11 +87,11 @@ export const SecondNewsItem = styled.div`
 export const OtherNews = styled.div`
   display: flex;
   justify-content: space-around;
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
   h4 {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 16px;
     margin: 0 0 20px 0;
   }
@@ -96,7 +100,7 @@ export const OtherNews = styled.div`
     height: 80px;
     object-fit: cover;
     margin-right: 16px;
-    @media (max-width: 360px) {
+    @media (max-width: 768px) {
     display: none;
   } 
   }
@@ -112,7 +116,7 @@ export const OtherNews = styled.div`
 `;
 export const OtherNewsItem = styled.div`
   display: flex;
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     margin-bottom: 40px;
   } 
 `;
@@ -145,7 +149,7 @@ export const Cities = styled.div`
     color: black;
     text-decoration: none;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 `;

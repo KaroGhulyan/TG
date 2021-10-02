@@ -5,8 +5,9 @@ import { selectCities } from '../../features/appSlice';
 import { SidebarWrapper,Cities } from './style';
 
 function Sidebar({ open }) {
+  
   const cities = useSelector(selectCities);
-  console.log(cities)
+  
   return (
     <SidebarWrapper open={open}>
       <Cities>

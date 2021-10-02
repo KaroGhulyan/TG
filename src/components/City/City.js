@@ -37,7 +37,6 @@ function City() {
       },
     });
     const res = await cityWeather.json();
-    console.log(res);
     setData(res);
     const { main, sys, visibility, wind } = res;
 
@@ -92,6 +91,7 @@ function City() {
 
   useEffect(() => {
     getCity();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [city]);
 
   return (

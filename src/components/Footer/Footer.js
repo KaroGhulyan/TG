@@ -24,31 +24,31 @@ function Footer() {
         <FooterMain>
           <ul>
             <li>
-              <Link>About us</Link>
+               <Link to={'/'}>About us</Link>
             </li>
             <li>
-              <Link>We are hiring</Link>
+               <Link to={'/'}>We are hiring</Link>
             </li>
             <li>
-              <Link>Contact us</Link>
+               <Link to={'/'}>Contact us</Link>
             </li>
           </ul>
           <ul>
             <li>
-              <Link>Terms & Conditions</Link>
+               <Link to={'/'}>Terms & Conditions</Link>
             </li>
             <li>
-              <Link>Privacy Policy</Link>
+               <Link to={'/'}>Privacy Policy</Link>
             </li>
             <li>
-              <Link>Security</Link>
+               <Link to={'/'}>Security</Link>
             </li>
           </ul>
           <Icons>
-            <Link>
+             <Link to={'/'}>
               <img src={Facebook} alt="Logo" />
             </Link>
-            <Link>
+             <Link to={'/'}>
               <img src={Twitter} alt="Logo" />
             </Link>
           </Icons>

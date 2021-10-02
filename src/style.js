@@ -11,7 +11,7 @@ export const Container = styled.div`
   @media (max-width: 1200px) {
     padding: 0 100px;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     padding: 0 30px;
   }
 `;
@@ -27,4 +27,5 @@ export const Title = styled.h3`
   font-size: 20px;
   color: black;
   text-transform: uppercase;
+  margin-bottom: 24px;
 `;

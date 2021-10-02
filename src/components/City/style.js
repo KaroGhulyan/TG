@@ -61,7 +61,7 @@ export const OtherWeatherInfo = styled.div`
   align-items: space-between;
   justify-content: space-between;
   padding: 100px 0;
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   flex-direction: column;
 }
 `;
@@ -70,7 +70,7 @@ export const Info = styled.div`
   display: flex;
   margin-right: 30px;
   justify-content: space-between;
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     width: 100%;
   } 
   > div {

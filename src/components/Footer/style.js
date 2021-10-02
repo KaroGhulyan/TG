@@ -9,7 +9,7 @@ export const FooterWrapper = styled.div`
 export const FooterTop = styled.div``;
 export const FooterMain = styled.div`
   display: flex;
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
   flex-direction: column;
   }
   a {
