@@ -15,11 +15,13 @@ export const appSlice = createSlice({
   name: 'app',
   initialState,
   reducers: {
-
+    cities:(state,action)=>{
+      
+    }
   },
 });
 
-export const { } = appSlice.actions;
+export const { cities} = appSlice.actions;
 
 export const selectCities = (state) => state.app.cities;
 
