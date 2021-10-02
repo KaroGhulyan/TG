@@ -29,13 +29,23 @@ export const HeroSection = styled.div`
 
 export const NewsWrapper = styled.div`
   padding: 96px 0;
+  @media (max-width: 360px) {
+    flex-direction: column;
+  }  
 `;
 export const NewsSection = styled.div`
-  /* display: flex; */
+  @media (max-width: 360px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 export const News = styled.div`
   display: flex;
   margin-bottom: 40px;
+  flex-direction: row;
+  @media (max-width: 360px) {
+    flex-direction: column;
+  }
 `;
 export const GeneralNews = styled.div`
   margin-right: 16px;
@@ -44,9 +54,9 @@ export const GeneralNews = styled.div`
     font-size: 18px;
   }
   img {
-    width: 920px;
-    height: 600px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 920px;
+    height: auto;
   }
   p {
     font-weight: 300;
@@ -59,9 +69,9 @@ export const SecondNews = styled.div`
     font-size: 16px;
   }
   img {
-    width: 296px;
-    height: 262px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 296px;
+    height: auto;
   }
   span {
     font-weight: bold;
@@ -73,6 +83,9 @@ export const SecondNewsItem = styled.div`
 export const OtherNews = styled.div`
   display: flex;
   justify-content: space-around;
+  @media (max-width: 360px) {
+    flex-direction: column;
+  }
   h4 {
     font-weight: 500;
     font-size: 16px;
@@ -83,6 +96,9 @@ export const OtherNews = styled.div`
     height: 80px;
     object-fit: cover;
     margin-right: 16px;
+    @media (max-width: 360px) {
+    display: none;
+  } 
   }
   p {
     margin-top: 8px;
@@ -96,6 +112,9 @@ export const OtherNews = styled.div`
 `;
 export const OtherNewsItem = styled.div`
   display: flex;
+  @media (max-width: 360px) {
+    margin-bottom: 40px;
+  } 
 `;
 export const OtherNewsTitle = styled.div`
   /* display: flex; */

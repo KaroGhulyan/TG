@@ -1,7 +1,9 @@
-import styled from 'styled-components';
-import Image1 from '../../assets/image11.png';
+import styled from "styled-components";
+import Image1 from "../../assets/image11.png";
 
-export const WeatherWrapper = styled.section``;
+export const WeatherWrapper = styled.section`
+  padding-bottom: 96px;
+`;
 export const GeneralWeatherInfo = styled.div`
   width: 100%;
   height: 462px;
@@ -55,20 +57,36 @@ export const WeatherInfo = styled.div`
 export const OtherWeatherInfo = styled.div`
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   align-items: space-between;
   justify-content: space-between;
   padding: 100px 0;
-`
+@media (max-width: 360px) {
+  flex-direction: column;
+}
+`;
 export const Info = styled.div`
-   width: 40%;
-   display: flex;
-   margin-right: 30px;
-   justify-content: space-between;
-   >div{
-     display: flex;
-     align-items: center;
-     >img{
-       margin-right: 8px;
-     }
-   }
-`
+  width: 40%;
+  display: flex;
+  margin-right: 30px;
+  justify-content: space-between;
+  @media (max-width: 360px) {
+    width: 100%;
+  } 
+  > div {
+    display: flex;
+    align-items: center;
+    > img {
+      margin-right: 8px;
+    }
+    > p {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+    }
+  }
+  > p {
+    font-weight: 500;
+    font-size: 24px;
+  }
+`;

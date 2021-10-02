@@ -12,7 +12,7 @@ export const Container = styled.div`
     padding: 0 100px;
   }
   @media (max-width: 360px) {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 `;
 
@@ -23,8 +23,7 @@ export const Logo = styled.img`
 `;
 
 export const Title = styled.h3`
-  font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 20px;
   color: black;
   text-transform: uppercase;
