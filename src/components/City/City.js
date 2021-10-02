@@ -118,7 +118,7 @@ function City() {
           {otherData.length > 0 &&
             otherData.map(({ title, info, icon }, index) => {
               return (
-                <Info>
+                <Info key={index}>
                   <div>
                     <img src={icon} alt={title} />
                     <p>{title}</p>

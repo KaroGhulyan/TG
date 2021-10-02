@@ -76,6 +76,7 @@ export const Info = styled.div`
   > div {
     display: flex;
     align-items: center;
+    margin-bottom: 16px;
     > img {
       margin-right: 8px;
     }
